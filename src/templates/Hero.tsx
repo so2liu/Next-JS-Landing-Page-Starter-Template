@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import { Background } from '../background/Background';
 import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
@@ -11,14 +9,7 @@ const Hero = () => (
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
-        <li>
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
-        </li>
-        <li>
-          <Link href="/">Sign in</Link>
-        </li>
+        <span></span>
       </NavbarTwoColumns>
     </Section>
 
@@ -26,11 +17,13 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'The modern landing page for\n'}
-            <span className="text-primary-500">React developers</span>
+            {'An AI native communication tool for\n'}
+            <span className="text-primary-500">
+              high performance supporters
+            </span>
           </>
         }
-        description="The easiest way to build a React landing page in seconds."
+        description="The easiest way to build a custom AI native pipelines, with teamates."
         button={<Button xl>Comming soon</Button>}
       />
     </Section>
